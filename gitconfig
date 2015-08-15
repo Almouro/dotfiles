@@ -1,0 +1,43 @@
+[user]
+	email = contact@almouro.com
+	name = Almouro
+[credential]
+	helper = cache --timeout=3600
+[color]
+   branch = auto
+   diff = auto
+   interactive = auto
+   status = auto
+   ui = auto
+[push]
+   default = current
+[core]
+   excludesfile = ~/.gitignore
+   editor = vim
+[alias]
+   aliases = config --get-regexp ^alias\\.
+   confg = config --global
+   an = add -N
+   ap = add -p
+   br = branch
+   ci = commit
+   cm = commit -m
+   cia = commit --amend
+   cian = commit --amend --no-edit
+   clear = remote prune origin
+   co = checkout
+   cob = checkout -b
+   cos = checkout staging
+	 com = checkout master
+   fa = fetch --all
+   ins = "!git checkout master; git branch -D `git branch | grep -v 'master'`; git fetch -ap; git purf"
+   keepkeep = checkout -- *.gitkeep
+   pf = push -f
+   pur = pull --rebase
+	 purf = pull --rebase upstream master
+   st = status
+   sth = stash
+   sthp = stash pop
+   re = rebase
+   rec = rebase --continue
+   rei = rebase -i
